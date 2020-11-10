@@ -1,0 +1,65 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="cascade.css">
+		<script src="validate.js"></script>
+				<title>Registration Form</title>
+		
+	</head>
+	
+	<body><font color="white">
+	   <div id="bg"></div>
+			<div id="main">
+				<center><h2><b><font color="white" size="20px">Registration From</font><b></h2></center>
+				</div>
+				<form action="reg.php" method="post" onsubmit="return ch1()">
+				
+				<label>&nbsp; Name : </label>
+				<input type="text" id="name" name="name" placeholder="Enter your Name"  required style="border-radius:5px 5px 5px 5px;"><br><br>
+				
+				<label> &nbsp;&nbsp;Surname : </label>
+				<input type="text" id="surname"  name="surname" placeholder="Enter your Surname" required style="border-radius:5px 5px 5px 5px;"><br><br>
+				
+				<label>&nbsp; Phone number : </label>
+				<input type="number" id="phone" name="phone" placeholder="Enter your Phone no."  required style="border-radius:5px 5px 5px 5px;"><br><br>
+				
+				<label>&nbsp; Email : </label>
+				<input type="email" id="mail" name="mail" placeholder="Enter your email"  required style="border-radius:5px 5px 5px 5px;"><br><br>
+				
+				<label>&nbsp; Gender : </label>&nbsp; &nbsp; &nbsp;
+				Male : <input type="radio" name="gender" id="gender" value="Male" required checked>&nbsp;&nbsp;
+				Female :<input type="radio" name="gender" id="gender" value="Female" required>&nbsp;&nbsp;
+				Other  :<input type="radio" name="gender" id="gender" value="Female" required><br><br>
+				 <label>&nbsp;&nbsp;Address :</label>
+				<textarea style="border-radius:5px 5px 5px 5px; resize:none; vertical-align:middle; width:250px;height:50px;" id="address" name="address" placeholder="Enter your address" row="50" cols="50" required></textarea><br>
+				
+				<br>
+				
+				<label>&nbsp;&nbsp;State : </label>
+				<input type="text" id="state" name="state" placeholder="Enter your state"  required style="border-radius:5px 5px 5px 5px;"><br><br>
+				
+				<label>&nbsp;&nbsp;City : </label>
+				<input type="text" id="city" name="city" placeholder="Enter your city"  required style="border-radius:5px 5px 5px 5px;"><br><br>
+				<label>&nbsp;&nbsp;Type : </label>
+				<select id="type" name="type">
+				<option value="">select</option>
+				<option value="user">User</option>
+				<option value="owner">Owner</option>
+				</select><br><br>
+				<label>&nbsp; UID : </label>
+				<input type="text" id="uid" name="uid" placeholder="Enter your user id" style="border-radius:5px 5px 5px 5px;" required><br><br>
+				
+				
+				<label>&nbsp; Password : </label>&nbsp;&nbsp;&nbsp;&nbsp;<span id="Strength">No strength</span>&nbsp;
+				<input type="Password" id="pwd" name="pwd" placeholder="Enter Password" onkeyup="check()" required style="border-radius:5px 5px 5px 5px;"><br><br>
+				
+				<label>&nbsp; Confirm-Password : </label>
+				<input type="Password" id="cpwd" name="cpwd" placeholder="Confirm your Password" required style="border-radius:5px 5px 5px 5px;">
+				
+				<br><br>
+				<center><input type="Submit" class="button" value="Submit" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Reset" class="button" value="Reset" ></center>
+				</form>
+				</font>
+				
+	</body>
+</html>

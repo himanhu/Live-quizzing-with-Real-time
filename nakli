@@ -1,0 +1,83 @@
+
+<html>
+
+<style>
+
+
+#con{ border-radius: 10px,10px;
+	  width: 100%;
+	height:1000px;
+
+       margin-left:auto;
+	   margin-right:auto;
+	   margin-top:15px
+	   
+	     background: linear-gradient(to bottom, #33ccff 0%, #660066 100%);
+}
+#header{ border-radius: 10px;
+	
+	height:65px;
+	width:full;
+	 
+	 background: linear-gradient(to bottom, #33ccff 0%, #660066 100%);
+}
+	
+	
+
+
+
+#mainbody{ border-radius: 10px;
+	margin-top:0;
+	 width:full;
+	 height:880px;;
+	 background: cornsilk;
+	 
+	 
+}
+
+
+
+
+
+
+</style>
+
+
+<body>
+<div id="con">
+<div id="header"> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="luoida handwriting" size="120" color= "white"><?php echo $se; ?>
+ 
+</font>&nbsp;&nbsp;&nbsp;&nbsp;
+   
+ <button class="btn-6" onclick="home_open()"><span><font face="Comic Sans MA" size="3px">Home</font></span></button>
+  
+   
+  
+
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<?php
+session_start();
+$un=$_SESSION["tname"];?>
+<b>
+<?php echo $un;
+ 
+?>
+</b>
+<img src="icon.png">
+<a href="logout.php">LOGOUT</a>
+	</div>
+<div id="mainbody">
+ 
+
+
+</body> 
+
+</body>
+</html>
+ 
